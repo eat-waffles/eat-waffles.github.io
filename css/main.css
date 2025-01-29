@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body {
+    background-color: rgba(210, 180, 140, 1);
+    width: 100%;
+    height: 100%;
+    font-family: Space Grotesk;
+    margin-top: 60px;
+    overflow-x: hidden;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#popup button {
+    background-color: lightblue;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#popup button:hover {
+    background-color: rgba(210, 180, 140, 1);
+    border: 2px solid white;
+    padding: 4.5px;
+    border-radius: 5px;
+}
+/*menu*/
+        .search {
+            background-color: #87CEEB;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 500;
+            font-family: Space Grotesk;
+            color: #fff;
+            width: 30%;
+            
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 30px;
+            margin-right: 40px;
+            align-items: center;
+        }
+        .menu-button {
+            position: relative;
+            margin: 10px;
+            width: 140px;
+            height: 140px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            color: lightblue;
+            font-weight: none;
+            text-decoration: none;
+        }
+        .menu-button:hover {
+            transform: scale(1.1);
+        }
+        .menu-button img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        .menu-button:hover img {
+            transform: scale(1.08);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(34, 34, 34, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-family: Space Grotesk;
+            color: pink;
+        }
+        .menu-button:hover .overlay {
+            opacity: 1;
+        }
+/*no longer the menu*/
+.music {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.music:hover {
+    transform: scale(1.1);
+}
+div.gallery {
+  border: 5px solid green;
+}
+
+div.gallery:hover {
+  border: 5px solid lightblue;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: Space Grotesk;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
